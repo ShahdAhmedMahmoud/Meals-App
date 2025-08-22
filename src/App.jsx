@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Components/Home/Home'
-import { createBrowserRouter, RouterProvider}  from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider}  from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Meals from './Components/Meals/Meals'
 import Ingrediant from './Components/Ingrediant/Ingrediant'
@@ -39,7 +39,7 @@ function App() {
   اكواد هتبقي في ال App
   */
  
-const router= createBrowserRouter([
+const router= createHashRouter([
   {
   path:"/"  , element:<Layout setSearch={setSearch}/>,
   children:[
